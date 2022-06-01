@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register form</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style>
+        .form-control {
+            height: 40px;
+        }
+        .register-form {
+            width: 450px;
+            margin: 30px auto;
+            height: 500px;
+        }
+        .register-form form {
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #f0f0f0;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+        .form-group1 {
+            font: 20px;
+=        }
+        .form-group2 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            top: 50%;
+            left: 50%;
+
+        }
+        body{
+            background: #c1d6cc;
+        }
+        span { display:block; width:12%; float:left; height:4px;}
+        .buttons{
+            width: 380px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="register-form">
+    <form>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><input type="text" class="form-control" placeholder="First Name"></div>
+                <div class="col"><input type="text" class="form-control" placeholder="Last Name"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="display" placeholder="Display Name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email Address" id="email">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><input type="password" class="form-control" name="password" placeholder="Password" required="required"></div>
+                <div class="col"><input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required"> </div>
+            </div>
+        </div>
+        <div class="form-group1">
+            <div class="row">
+                <div class="col" style="width: 310px; font-size: 10px">
+                    <p> By clicking
+                        <button type="button" class="btn btn-primary btn-sm" style="height: 22px; font-size: 9px;font-family: 'Arial'">Sign in</button>
+                        , you agree to the <a href = "#" style="text-decoration:none" > Terms and Conditions</a> set out by this site, including our Cookie use.</p>
+                </div>
+            </div>
+        </div>
+        <div class="form-group2">
+        <div class="row" >
+            <button onclick="validate()"  href="#" class="btn btn-success btn-sm buttons">Sign in</button>
+        </div>
+        <div class="form-group2"><p>Already have account? Click to <a href="login.html" class="btn btn-primary btn-sm" role="button">Log in</a></p></div>
+
+    </div>
+    </form>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
